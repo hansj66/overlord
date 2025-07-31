@@ -1,0 +1,292 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "9b0ac8a0-2bfc-4e33-aaf3-4061d2fbe75c")
+	(paper "A4")
+	(lib_symbols)
+	(text "Overlord controller board\n(c) 2025 Hans Jørgen Grimstad - Licensed under CERN-OHL-S v2\nSee LICENSE or https://ohwr.org/cernohl"
+		(exclude_from_sim no)
+		(at 227.33 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2d5d5de1-2cfb-487d-a403-3acd971e5c38")
+	)
+	(sheet
+		(at 80.01 22.86)
+		(size 43.18 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "038d5f84-7c63-41b0-a4f9-4e84249f9a42")
+		(property "Sheetname" "Power"
+			(at 80.01 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 80.01 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "overlord"
+				(path "/9b0ac8a0-2bfc-4e33-aaf3-4061d2fbe75c"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 27.94 22.86)
+		(size 43.18 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8a5b4019-4f8e-4b65-8454-ba4fd1c219ec")
+		(property "Sheetname" "CM5"
+			(at 27.94 22.1484 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cm5.kicad_sch"
+			(at 27.94 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "overlord"
+				(path "/9b0ac8a0-2bfc-4e33-aaf3-4061d2fbe75c"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 22.86)
+		(size 44.45 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "93c67ef0-ab61-495b-acea-e6e1366b2dc5")
+		(property "Sheetname" "IMU"
+			(at 134.62 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "imu.kicad_sch"
+			(at 134.62 50.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "overlord"
+				(path "/9b0ac8a0-2bfc-4e33-aaf3-4061d2fbe75c"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 66.04)
+		(size 43.18 24.13)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ab909392-99a4-4253-b0ff-1bfd78bf5169")
+		(property "Sheetname" "Dynamixel"
+			(at 81.28 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dynamixel.kicad_sch"
+			(at 81.28 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "overlord"
+				(path "/9b0ac8a0-2bfc-4e33-aaf3-4061d2fbe75c"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 102.87)
+		(size 44.45 24.13)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bd52721e-9009-49c1-96da-11c132b704f5")
+		(property "Sheetname" "Cooler"
+			(at 29.21 102.1584 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cooler.kicad_sch"
+			(at 29.21 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "overlord"
+				(path "/9b0ac8a0-2bfc-4e33-aaf3-4061d2fbe75c"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 66.04)
+		(size 43.18 24.13)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "db9289e2-77f5-46f0-954d-2ba556d98a28")
+		(property "Sheetname" "CANBus"
+			(at 29.21 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "can.kicad_sch"
+			(at 29.21 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "overlord"
+				(path "/9b0ac8a0-2bfc-4e33-aaf3-4061d2fbe75c"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 135.89 66.04)
+		(size 44.45 24.13)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f693e463-561b-4ddd-a708-98fadf130238")
+		(property "Sheetname" "Ethernet"
+			(at 135.89 65.3284 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ethernet.kicad_sch"
+			(at 135.89 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "overlord"
+				(path "/9b0ac8a0-2bfc-4e33-aaf3-4061d2fbe75c"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

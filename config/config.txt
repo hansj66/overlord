@@ -1,0 +1,71 @@
+# For more options and information see
+# http://rptl.io/configtxt
+# Some settings may impact device functionality. See link above for details
+
+# Uncomment some or all of these to enable the optional hardware interfaces
+
+#dtparam=i2s=on
+
+# Enable audio (loads snd_bcm2835)
+# dtparam=audio=on
+
+# Additional overlays and parameters are documented
+# /boot/firmware/overlays/README
+
+# Automatically load overlays for detected cameras
+# camera_auto_detect=1
+
+# Automatically load overlays for detected DSI displays
+# display_auto_detect=1
+
+# Automatically load initramfs files, if found
+auto_initramfs=1
+
+# Enable DRM VC4 V3D driver
+#dtoverlay=vc4-kms-v3d
+#max_framebuffers=2
+
+# Don't have the firmware create an initial video= setting in cmdline.txt.
+# Use the kernel's default instead.
+disable_fw_kms_setup=1
+
+# Run in 64-bit mode
+arm_64bit=1
+
+# Disable compensation for displays with overscan
+disable_overscan=1
+
+# Run as fast as firmware / board allows
+arm_boost=1
+
+[cm4]
+# Enable host mode on the 2711 built-in XHCI USB controller.
+# This line should be removed if the legacy DWC2 controller is required
+# (e.g. for USB device mode) or if USB support is not required.
+otg_mode=1
+
+[cm5]
+
+# IMU
+dtparam=i2c_arm=on
+
+# BNO055 RESET
+gpio=7=op,dh
+
+# BNO055 ADDR SELECT
+gpio=24=op,dh
+
+# UART and Dynamixel
+enable_uart=1
+dtoverlay=uart1
+dtoverlay=disable-bt
+gpio=22=op,dl
+
+# CAN
+dtparam=spi=on
+dtoverlay=dwc2,dr_mode=host
+dtparam=ant1
+dtoverlay=spi0-1cs,cs0_pin=8,sclk_pin=11,miso_pin=9,mosi_pin=10
+dtoverlay=gpio-pullup,gpiopin=5
+dtoverlay=mcp2515-can0,oscillator=16000000,cs_pin=8,sclk_pin=11,miso_pin=9,mosi_pin=10,interrupt=5
+
