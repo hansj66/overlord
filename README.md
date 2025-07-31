@@ -34,7 +34,7 @@ In addition to the carrier board, you will need a
 
 ### Programming the CM5
 
-1. The compute module has to be flashed with an operating system before it can be used. Information on how to do this is available in the ["Compute Module Hardware"](https://www.raspberrypi.com/documentation/computers/compute-module.html#flash-compute-module-emmc) section on the offical [raspberrypi.com](https://www.raspberrypi.com/) site. Remeber to enable SSH in the OS customisation settings before flashing the module.
+1. The compute module has to be flashed with an operating system before it can be used. Information on how to do this is available in the ["Compute Module Hardware"](https://www.raspberrypi.com/documentation/computers/compute-module.html#flash-compute-module-emmc) section on the offical [raspberrypi.com](https://www.raspberrypi.com/) site. Remember to enable SSH in the OS customisation settings before flashing the module.
 1. Mount the CM5 in the carrier board and attach a battery or power supply to the "COMPUTE POWAH" port. Observe polarity. There is no reverse polarity protection circuitry. Reversing polarity will in all likelyhood fry the carrier board.
 1. The blue LED on the carrier board will light up, indicating that it has 5V power. 
 1. The CM5 will require a few seconds to boot before you can ssh in. (Tip: create an .ssh folder under the CM5 home folder and copy your public key to ./ssh/authorized_keys. You can then "ssh hostname" without having to type in a password)
