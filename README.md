@@ -47,23 +47,10 @@ You are now all set to start playing around with the board.
 
 ## Configuration and code examples
 
+* [Remote control](./firmware/examples/remote-control/README.md)
 * [Dynamixel](./firmware/examples/dynamixel/README.md)
 * [Xiaomi Cybergear](./firmware/examples/cybergear/README.MD)
 * [IMU](./firmware/examples/imu/README.md)
-* [Remote control]
-
-
-
-## Xiaomi Cybergear example
-### Scanning the network
-### Address assignment
-### Positioning example
-
-## Remote control examples
-### Gamepad
-### Taranis
-
-## IMU example
 
 ## Networking
 
