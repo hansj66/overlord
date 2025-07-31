@@ -45,10 +45,14 @@ In addition to the carrier board, you will need a
 
 You are now all set to start playing around with the board.
 
-## Dynamixel example
-### Scanning the network
-### Address assignment
-### Positioning example
+## Configuration and code examples
+
+* [Dynamixel](./firmware/examples/dynamixel/README.md)
+* [Xiaomi Cybergear](./firmware/examples/cybergear/README.MD)
+* [IMU](./firmware/examples/imu/README.md)
+* [Remote control]
+
+
 
 ## Xiaomi Cybergear example
 ### Scanning the network
