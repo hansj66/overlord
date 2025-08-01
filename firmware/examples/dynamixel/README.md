@@ -21,6 +21,4 @@ Once everything is hooked up and servo power is applied, you can use [Dynamixel 
 
 ### Code examples
 
-* [Scanning the network]() - WIP
-* [Address assignment]() - WIP
-* [Positioning example]() - WIP
+* [Scanning the network](./scan/README.md)
