@@ -36,18 +36,15 @@ Move the carrier board around to see the heading vector change.
 Example output:
 
 ```sh
-BNO055 sensor detected, chip ID is correct (0xA0)
-Heading: 360.00°, Roll: 0.38°, Pitch: 0.31°
-Heading: 360.00°, Roll: 0.38°, Pitch: 0.31°
-Heading: 359.00°, Roll: 0.38°, Pitch: 0.19°
-Heading: 344.62°, Roll: 4078.50°, Pitch: 4083.62°
-Heading: 240.50°, Roll: 4045.25°, Pitch: 4056.69°
-Heading: 238.50°, Roll: 4044.38°, Pitch: 4044.31°
-Heading: 332.50°, Roll: 4058.62°, Pitch: 4068.19°
-Heading: 329.62°, Roll: 4090.62°, Pitch: 25.81°
-Heading: 330.44°, Roll: 4094.88°, Pitch: 34.25°
-Heading: 330.94°, Roll: 4094.81°, Pitch: 24.50°
-Heading: 332.69°, Roll: 0.19°, Pitch: 0.12°
+2025/08/01 16:47:14 INFO BNO055 heading="Heading: 357.75°, Roll: 4066.62°, Pitch: 11.19°\n"
+2025/08/01 16:47:14 INFO BNO055 heading="Heading: 359.56°, Roll: 4037.38°, Pitch: 43.06°\n"
+2025/08/01 16:47:15 INFO BNO055 heading="Heading: 358.31°, Roll: 4027.44°, Pitch: 21.00°\n"
+2025/08/01 16:47:15 INFO BNO055 heading="Heading: 340.94°, Roll: 4033.19°, Pitch: 4028.31°\n"
+2025/08/01 16:47:16 INFO BNO055 heading="Heading: 76.75°, Roll: 4048.81°, Pitch: 4020.38°\n"
+2025/08/01 16:47:16 INFO BNO055 heading="Heading: 81.56°, Roll: 4067.94°, Pitch: 4029.06°\n"
+2025/08/01 16:47:17 INFO BNO055 heading="Heading: 73.81°, Roll: 4089.69°, Pitch: 4020.50°\n"
+2025/08/01 16:47:17 INFO BNO055 heading="Heading: 74.81°, Roll: 4085.62°, Pitch: 4060.06°\n"
+2025/08/01 16:47:18 INFO BNO055 heading="Heading: 82.56°, Roll: 4089.88°, Pitch: 1.00°\n"
 ```
 
 
