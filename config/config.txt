@@ -57,7 +57,7 @@ gpio=24=op,dh
 
 # UART and Dynamixel
 enable_uart=1
-dtoverlay=uart1
+dtoverlay=uart0
 dtoverlay=disable-bt
 gpio=22=op,dl
 
