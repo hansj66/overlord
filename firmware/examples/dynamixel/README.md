@@ -22,3 +22,12 @@ Once everything is hooked up and servo power is applied, you can use [Dynamixel 
 ### Code examples
 
 * [Scanning the network](./scan/README.md)
+
+### Resources
+
+* [Dynamixel SDK](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/)
+* [Dynamixel Protocol 1.0](https://emanual.robotis.com/docs/en/dxl/protocol1/)
+* [Dynamixel Protocol 2.0](https://emanual.robotis.com/docs/en/dxl/protocol2/)
+* [Dynamxiel Wizard](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/)
+* [U2D2 interface](https://emanual.robotis.com/docs/en/parts/interface/u2d2/)
+
