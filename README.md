@@ -21,9 +21,6 @@ This repository contains:
 ## Licensing
 This is open hardware and software. Licensing terms can be found [here](LICENSE.md).
 
-
-> ⚠️ **Note**: Use of this repository’s contents for AI/ML training is strictly prohibited. See [DO-NOT-TRAIN.md](./DO-NOT-TRAIN.md) for details.
-
 ## Getting started
 
 In addition to the carrier board, you will need a 
