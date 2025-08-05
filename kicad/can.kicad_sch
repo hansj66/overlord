@@ -2149,6 +2149,16 @@
 		)
 		(uuid "ae2e9a24-b3dc-4a71-a53f-840b92b83486")
 	)
+	(text "Note: Use a 16MHz crystal (+ matching values for C10/C18) in order to achieve 1Mbit/s CAN bitrate "
+		(exclude_from_sim no)
+		(at 132.588 121.666 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cac7ee68-882a-410c-9934-8b44ff98f2d8")
+	)
 	(global_label "~{CS}"
 		(shape input)
 		(at 166.37 90.17 0)
