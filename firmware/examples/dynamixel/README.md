@@ -21,7 +21,8 @@ Once everything is hooked up and servo power is applied, you can use [Dynamixel 
 
 ### Code examples
 
-* [Scanning the network](./scan/README.md)
+* [Network scan example README](./scan/README.md)
+* [Network scan example code](./scan/scan.go)
 
 ### Resources
 
