@@ -1,9 +1,7 @@
 package main
 
 import (
-	"encoding/binary"
 	"log/slog"
-	"math"
 	"net"
 	"os"
 	"time"
@@ -15,51 +13,6 @@ const (
 	hostID  = 0x01
 	motorID = 0x7F
 )
-
-func createSetControlModeFrame(hostID, motorID, mode uint8) []byte {
-	// Build the 29-bit CAN ID
-	canID := uint32(SingleParameterWrite)<<24 |
-		uint32(hostID)<<8 |
-		uint32(motorID) |
-		CAN_EFF_FLAG
-
-	// Allocate the frame and pack ID+flags (little-endian)
-	frame := make([]byte, unix.CAN_MTU) // CAN_MTU == 16
-	binary.LittleEndian.PutUint32(frame[0:4], canID)
-	frame[4] = 8 // DLC = 8 bytes
-	// Payload: index 0x7005 → bytes 8–9
-	frame[8] = 0x70
-	frame[9] = 0x05
-	// Insert the 1-byte mode value at byte 12
-	frame[12] = mode
-
-	return frame
-}
-
-func createSetPositionFrame(hostID, motorID uint8, angleDeg float64) []byte {
-	// Build the 29-bit CAN ID
-	canID := uint32(SingleParameterWrite)<<24 |
-		uint32(hostID)<<8 |
-		uint32(motorID) |
-		CAN_EFF_FLAG
-
-	// 2) Angle: degrees → radians → IEEE-754 float32
-	angleRad := float32(angleDeg * math.Pi / 180.0)
-	bits := math.Float32bits(angleRad)
-
-	frame := make([]byte, unix.CAN_MTU)
-	binary.LittleEndian.PutUint32(frame[0:4], canID) // ID+flags
-	frame[4] = 8                                     // DLC = 8
-
-	// 4) Register index 0x7016  (MSB first)
-	frame[8] = 0x16
-	frame[9] = 0x70
-
-	// 5) Angle payload (little-endian) at bytes 12–15
-	binary.LittleEndian.PutUint32(frame[12:16], bits)
-
-	return frame
-}
 
 func RunSpeedExample(fd int) {
 	slog.Info("--- Running speed example ---")
